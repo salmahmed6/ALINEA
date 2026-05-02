@@ -2,9 +2,7 @@ name: CD — Deploy to Vercel
 
 on:
   push:
-    branches: [main]   # production deploy
-  push:
-    branches: [develop] # preview deploy
+    branches: [main, develop]
 
 jobs:
   deploy-production:
