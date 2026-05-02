@@ -4,6 +4,12 @@ on:
   push:
     branches: [main, develop]
 
+permissions:
+  contents: read
+  statuses: write
+  pull-requests: write
+  issues: write
+
 jobs:
   deploy-production:
     name: Deploy to Production
